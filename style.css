@@ -1,0 +1,213 @@
+
+
+nav li{
+    display: inline-block;
+}
+
+header{
+    font-family: "Roboto";
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+
+}
+
+.accountlist{
+    position: relative;
+    left: 700px;
+}
+
+header img{
+    width: 200px;
+    padding-top: 5px;
+}
+
+.hlogo{
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 140px;
+    cursor: pointer;
+}
+
+.searchbar{
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+.navbar{
+    background-color: #741c9c;
+    text-align: center;
+    box-size: fit-content;
+    height: 60px;
+    font-family: "Roboto";
+    padding-bottom: 10px;
+}
+
+
+.navigationbar{
+    text-align: center;
+    display: inline-block;
+    margin-right: 100;
+	bottom: 0;
+	left: 0;
+}
+
+.dropdown {
+    margin-right: 100px;
+    overflow: hidden;
+    float: left;
+}
+  
+.dropdown .dropbtn {
+    margin: 0; 
+    color: white;
+    font-size: 16px;
+    padding: 14px 16px;
+    border: none;
+    font-family: inherit;
+    background-color: inherit;
+}
+  
+a:hover, .dropdown:hover .dropbtn {
+    background-color: #d7c1e2;
+    color: #833cac;
+  }
+  
+  .dropdown-content {
+      z-index: 1;
+      position: absolute;
+      background-color: #f9f9f9;
+      display: none;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      min-width: 160px;
+    }
+    
+  .dropdown-content a {
+      text-align: left;
+      padding: 12px 16px;
+      color: black;
+      text-decoration: none;
+      display: block;
+      float: none;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .date {
+    margin: 0;
+    background: #e3d9e9;
+    padding: 10px 0;
+  }
+  
+  .date li {
+    text-align: center;
+    list-style-type: none;
+    width: 13.5%;
+    color: rgb(0, 0, 0);
+    margin-bottom: 5px;
+    font-size:12px;
+    display: inline-block;
+    font-size: 20px;
+
+  }
+  
+
+  .days {
+    background-color: #d7c1e2;
+    padding: 10px 0;
+    margin: 0;
+  }
+  
+  .days li {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    width: 13.5%;
+}
+
+.calendar {
+    width: 700px;
+    font-family: Arial;
+    position: absolute;
+    right: 40px;
+}
+
+.Month {
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
+.hIMG {
+    background-color: #dfd3e6;
+}
+
+.hIMG p {
+    display: inline-block;
+    position: relative;
+    top: -160px;
+    left: 880px;
+}
+
+.searchbutton {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    top: -200px;
+    left: 1050px;
+    background-color: #5e068e;
+    border: white;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 170px;
+    height: 50px;
+}
+
+.footer {
+    text-align: center;
+    background-color: #d7c1e2;
+
+}
+
+.footerli {
+    display: inline-block;
+    margin: 30px;
+    font-family: Arial;
+}
+
+.Nearby{   
+    left: 100px;
+    background-color: #d7c1e2;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.nearbylocationul{
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.nearbylocationli {
+    display: inline-block;
+    font-family: Arial;
+    left: 50px;
+    margin: 7px;
+}
+

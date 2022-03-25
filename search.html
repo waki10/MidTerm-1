@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Search Page</title>
+
+    <style>
+        *{
+            font-family: Arial;
+        }
+        .areafilterli{
+            display: inline-block;
+        }
+        .areafilterli{
+            display: inline-block;
+        }
+        .areafilterdiv{
+            text-align: center;
+        }
+        .sortbydiv{
+        }
+        .sortbyli{
+            display: block;
+            list-style-type: none;
+        }
+        .priceinput{
+            width: 50px;
+        }
+        .filterinput{
+            width: 80px;
+
+        }
+        .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+        }
+        .listings {
+        width: 420px;
+        border-style: ridge;
+        text-align: center;
+        height: 330px;
+        }
+
+        .listings a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .listings img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 400px;
+        border-style: ridge;
+        }
+        .listing_grid{
+            display: flex;
+            height: 600px;
+            padding-bottom: 500px;
+            background-color: #d7c1e2;
+   
+        }
+
+        .allfilter {
+            float: left;
+            padding-right: 30px;
+            padding-left: 20px;
+        }
+        .footer {
+            
+        }
+        .price{
+            position: relative;
+            top: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"></a>
+            <img src="assets\img\craiglist_logo.png" class="hlogo">
+        <form action="#" class="searchbar">
+              <input type="text" name="search" placeholder="Search Cragslist..." >
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <section class="accountlist">
+                <a href="#" style="display:inline-block"; >Account</a>
+                <p style="display:inline-block"; >|</p>
+                <a href="#" style="display:inline-block"; >List</a>
+            </section>
+    </header>
+    <div class="navbar">
+        <div class="navigationbar">
+            <nav>
+                <ul>
+                    <div class="dropdown">
+                        <button class="dropbtn">Housing
+                            <i class="fa fa-caret down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Apts/Housing</a>
+                          <a href="#">Housing Swap</a>
+                          <a href="#">Housing Wanted</a>
+                          <a href="#">Commercial</a>
+                          <a href="#">Parking/Storage</a>
+                          <a href="#">Real Estate</a>
+                          <a href="#">Rooms</a>
+                          <a href="#">Sublets/Temporary</a>
+                          <a href="#">Housing Wanted</a>
+                          <a href="#">All Housing</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Jobs
+                            <i class="fa fa-caret down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Accounting/Finance</a>
+                          <a href="#">Admin/Office</a>
+                          <a href="#">Engineering</a>
+                          <a href="#">Art/Media/Design</a>
+                          <a href="#">Business/Management</a>
+                          <a href="#">Customer Service</a>
+                          <a href="#">Education</a>
+                          <a href="#">Food/Bed/Hosp</a>
+                          <a href="#">General Labor</a>
+                          <a href="#">All Jobs</a>
+                        </div>
+                    </div>  
+                    <div class="dropdown">
+                        <button class="dropbtn">For Sale
+                            <i class="fa fa-caret down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Antiques</a>
+                          <a href="#">Appliances</a>
+                          <a href="#">Motor Vehicles</a>
+                          <a href="#">Barter</a>
+                          <a href="#">Garage Sale</a>
+                          <a href="#">Free</a>
+                          <a href="#">Jewelry</a>
+                          <a href="#">Heavy Equiptment</a>
+                          <a href="#">Tickets</a>
+                          <a href="#">See All For Sale</a>
+                        </div>
+                    </div>  
+                    <div class="dropdown">
+                        <button class="dropbtn">Services
+                            <i class="fa fa-caret down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Automotive</a>
+                          <a href="#">Labor/Move</a>
+                          <a href="#">Beauty</a>
+                          <a href="#">Legal</a>
+                          <a href="#">Cell/Mobile</a>
+                          <a href="#">Lessons</a>
+                          <a href="#">Creative</a>
+                          <a href="#">Computer</a>
+                          <a href="#">Events</a>
+                          <a href="#">Real Estate</a>
+                        </div>
+                    </div>  
+                    <div class="dropdown">
+                        <button class="dropbtn">Community
+                            <i class="fa fa-caret down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Activities</a>
+                          <a href="#">Lost+Found</a>
+                          <a href="#">Connections</a>
+                          <a href="#">Child Care</a>
+                          <a href="#">Events</a>
+                          <a href="#">Politics</a>
+                          <a href="#">General</a>
+                          <a href="#">Groups</a>
+                          <a href="#">Local News</a>
+                          <a href="#">Volunteers</a>
+                        </div>
+                    </div>  
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section>
+        <div class="areafilterdiv">
+        <ul class="areafilterul">
+            <li class="areafilterli">
+                <select name=state id="state">
+                    <option value="NY">NY</option>
+                </select>
+            </li>
+            <li class="areafilterli">
+                <select name=city id="city">
+                    <option value="New York">New York</option>
+                </select>
+            </li>
+            <li class="areafilterli">
+                <select name=borough id="borough">
+                    <option value="borough">Manhattan</option>
+                  </select>
+            <li class="areafilterli">
+                <select name=neighborhood id="neighborhood">
+                    <option value="UWS">Upper West Side</option>
+                  </select>
+            </li>
+        </ul>
+    </div>
+    </section>
+    <br><br>
+    <section>
+        <div class="sortbydiv">
+            <ul class="sortbyul">
+                <li class="sortbyli">
+                    <select name=sortby id="sortby">
+                        <option value="BM">Best Match</option>
+                        <option value="BM">Most Popular</option>
+                        <option value="BM">Lowest Price</option>
+                        <option value="BM">Highest Price</option>
+                        <option value="BM">none</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="allfilter">
+            <h2>Filter:</h2>
+            <div>
+                <input type="checkbox" class="FL1" name="FilterList1" value="List">
+                <label for="box1"> Posted Today</label><br>
+                <input type="checkbox" class="FL1" name="FilterList1" value="List">
+                <label for="box1"> Has Image</label><br>
+                <input type="checkbox" class="FL1" name="FilterList1" value="List">
+                <label for="box1"> Include Nearby Areas</label><br>
+                <input type="checkbox" class="FL1" name="FilterList1" value="List">
+                <label for="box1"> For Sale</label><br>
+                <input type="checkbox" class="FL1" name="FilterList1" value="List">
+                <label for="box1"> Open House</label><br>
+                <br>
+                <p>Price:</p>
+                <input type="tel" name="min_price" class="priceinput" placeholder="Min $" value="">
+                <input type="tel" name="max_price" class="priceinput" placeholder="Max $" value="">
+                <br><br>
+                <p>Near:</p>
+                <input type="tel" name="mile_input" class="filterinput" placeholder="Miles" value="" style="width: 30px"; >
+                <input type="tel" name="from_zip" class="filterinput" placeholder="Zip Code" value="">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="listing_grid">
+            <div class="listings">
+                <img src="assets\img\pexels-binyamin-mellish-106399.jpg">
+                <br>
+                <a href="details.html"><b>Luxury Family Home, Newly Renovated</b></a>
+                <h3 class="price">$350,000</h3>
+            </div>
+          </div>
+          
+    </section>
+    
+    <section class="footer">
+        </ul>
+            <li class="footerli">
+                <a href="#">Contact</a>
+            </li>
+            <li class="footerli">
+                <a href="#">Help</a>
+            </li>
+            <li class="footerli">
+                <a href="#">Terms</a>
+            </li>
+            <li class="footerli">
+                <a href="#">Privacy</a>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
