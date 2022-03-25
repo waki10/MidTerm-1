@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Details Page</title>
+
+    <style>
+        *{
+            font-family: Arial;
+        }
+        #IMGcatalog img {
+            display: block;
+            border: 2px rgb(0, 0, 0) solid;
+            width: 100px;
+            margin: 20px;
+        }
+        #IMGcatalog {
+            padding-left: 50px;
+            padding-top: 150px;
+            padding-right: 70px;
+            float: left;
+        }
+        #mainview img {
+            width: 850px;
+            padding-top: 100px;
+        }
+        .price_title {
+            padding-right: 100px;
+            float: right;
+            padding-top: 100px;
+            font-size: 15px;
+        }
+        .price_title h1 {
+            font-size: 30px;
+        }
+        #details {
+            display: block;
+            border: 2px rgb(0, 0, 0) ridge;
+            width: 600px;
+            padding-left: 100px;
+        }
+        #description {
+            display: block;
+            border: 2px rgb(0, 0, 0) ridge;
+            width: 1000px;
+            padding-left: 100px;
+        }
+        .messagebtn{
+           display: block;
+           position: absolute;
+           left: 1000px; 
+        }
+        .CTA{
+            font-size: 15px;
+            background-color: #772ba1;
+            color: white;
+            width: 200px;
+            height: 50px;
+            float: right;
+            display: inline-block;
+            position: relative;
+            top: -400px;
+            left: -160px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="assets\img\craiglist_logo.png" class="hlogo">
+            <form action="#" class="searchbar">
+              <input type="text" name="search" placeholder="Search Cragslist..." >
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <section class="accountlist">
+                <a href="#" style="display:inline-block"; >Account</a>
+                <p style="display:inline-block"; >|</p>
+                <a href="#" style="display:inline-block"; >List</a>
+            </section>
+    </header>
+    <div class="navbar">
+        <div class="navigationbar">
+            <nav>
+                <ul>
+                    <div class="dropdown">
+                        <button class="dropbtn">Housing
+                            <i class="fa fa-caret down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Apts/Housing</a>
+                          <a href="#">Housing Swap</a>
+                          <a href="#">Housing Wanted</a>
+                          <a href="#">Commercial</a>
+                          <a href="#">Parking/Storage</a>
+                          <a href="#">Real Estate</a>
+                          <a href="#">Rooms</a>
+                          <a href="#">Sublets/Temporary</a>
+                          <a href="#">Housing Wanted</a>
+                          <a href="#">All Housing</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Jobs
+                            <i class="fa fa-caret down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Accounting/Finance</a>
+                          <a href="#">Admin/Office</a>
+                          <a href="#">Engineering</a>
+                          <a href="#">Art/Media/Design</a>
+                          <a href="#">Business/Management</a>
+                          <a href="#">Customer Service</a>
+                          <a href="#">Education</a>
+                          <a href="#">Food/Bed/Hosp</a>
+                          <a href="#">General Labor</a>
+                          <a href="#">All Jobs</a>
+                        </div>
+                    </div>  
+                    <div class="dropdown">
+                        <button class="dropbtn">For Sale
+                            <i class="fa fa-caret down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Antiques</a>
+                          <a href="#">Appliances</a>
+                          <a href="#">Motor Vehicles</a>
+                          <a href="#">Barter</a>
+                          <a href="#">Garage Sale</a>
+                          <a href="#">Free</a>
+                          <a href="#">Jewelry</a>
+                          <a href="#">Heavy Equiptment</a>
+                          <a href="#">Tickets</a>
+                          <a href="#">See All For Sale</a>
+                        </div>
+                    </div>  
+                    <div class="dropdown">
+                        <button class="dropbtn">Services
+                            <i class="fa fa-caret down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Automotive</a>
+                          <a href="#">Labor/Move</a>
+                          <a href="#">Beauty</a>
+                          <a href="#">Legal</a>
+                          <a href="#">Cell/Mobile</a>
+                          <a href="#">Lessons</a>
+                          <a href="#">Creative</a>
+                          <a href="#">Computer</a>
+                          <a href="#">Events</a>
+                          <a href="#">Real Estate</a>
+                        </div>
+                    </div>  
+                    <div class="dropdown">
+                        <button class="dropbtn">Community
+                            <i class="fa fa-caret down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Activities</a>
+                          <a href="#">Lost+Found</a>
+                          <a href="#">Connections</a>
+                          <a href="#">Child Care</a>
+                          <a href="#">Events</a>
+                          <a href="#">Politics</a>
+                          <a href="#">General</a>
+                          <a href="#">Groups</a>
+                          <a href="#">Local News</a>
+                          <a href="#">Volunteers</a>
+                        </div>
+                    </div>  
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section id="IMGcatalog">
+        <img src="assets\img\pexels-binyamin-mellish-106399.jpg">
+        <img src="assets\img\pexels-binyamin-mellish-106399.jpg">
+        <img src="assets\img\pexels-binyamin-mellish-106399.jpg">
+        <img src="assets\img\pexels-binyamin-mellish-106399.jpg">
+        <img src="assets\img\pexels-binyamin-mellish-106399.jpg">
+    </section>
+    <section id="mainview">
+        <img src="assets\img\pexels-binyamin-mellish-106399.jpg">
+            <div class="price_title">
+                <h2>Newly Renovated Home!</h2>
+                <h1 class="price">Price: $350,000</h1>
+            </div>
+            <button type="submit" formaction="#" class="CTA">
+                <b>Message Seller</b>
+            </button>
+    </section>
+    <br><br><br>
+    <section id="details">
+        <h3>Details:</h3>
+        <p></p>
+    </section>
+    <section id="description">
+        <h3>Description:</h3>
+        <p></p>
+    </section>
+
+    
+    <section class="footer">
+    </ul>
+        <li class="footerli">
+            <a href="#">Contact</a>
+        </li>
+        <li class="footerli">
+            <a href="#">Help</a>
+        </li>
+        <li class="footerli">
+            <a href="#">Terms</a>
+        </li>
+        <li class="footerli">
+            <a href="#">Privacy</a>
+        </li>
+    </ul>
+    </section>
+</body>
+</html>
